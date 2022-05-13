@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                >
+
+                <com.devonetech.android.yourinvited.custom_view.CustomAutoCompleteTextView
+                    android:id="@+id/locationn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:ems="10"
+                    android:padding="15dp"
+                    android:hint="Enter Location"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="@android:color/black" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/location_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="20dp"
+                                android:hint="Ex. John’s Home"
+                                android:inputType="text"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textColor="#000000" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Location Picture(Optional)"
+                            android:textStyle="bold"
+                            android:padding="10dp"/>
+
+                        <ImageView
+                            android:id="@+id/campaignPic"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@mipmap/icon_"
+                            android:padding="10dp"
+                            android:layout_gravity="center"
+                            android:scaleType="fitXY"/>
+
+
+                    </LinearLayout>
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+
+                        <Button
+                            android:id="@+id/next_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="Save"
+                            android:textColor="@android:color/white"
+                            android:theme="@style/MyButton" />
+
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

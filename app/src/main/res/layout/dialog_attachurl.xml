@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/postTXt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post URL"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <EditText
+                android:id="@+id/email_edt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:focusable="true"
+                android:inputType="textEmailAddress"
+                android:hint="Post your url" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <Button
+            android:id="@+id/reset_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="Post Now"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:theme="@style/MyButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

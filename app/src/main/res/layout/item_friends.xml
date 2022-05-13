@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="170px"
+            android:layout_height="170px"
+            android:src="@drawable/rect"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="11dp"
+            android:paddingLeft="16dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Mark Jhonson"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:textSize="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Scenes 18 Jan 2018 "
+                android:paddingTop="6dp"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:gravity="center"
+            >
+
+
+
+            <!--<ImageView-->
+            <!--android:id="@+id/plus"-->
+            <!--android:layout_width="21dp"-->
+            <!--android:layout_height="21dp"-->
+            <!--android:src="@drawable/plus"-->
+
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/friends"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Friends"
+                android:textSize="14dp"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:drawableLeft="@drawable/ic_people_black_24dp"
+                android:background="@drawable/rounded_rect"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/not_friends"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Friends"
+                android:textSize="14dp"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:drawableLeft="@drawable/ic_person_add_black_24dp"
+                android:background="@drawable/rounded_rect"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/pending"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Pending"
+                android:textSize="14dp"
+                android:paddingLeft="15px"
+                android:paddingRight="15px"
+                android:visibility="gone"
+                android:background="@drawable/rounded_rect"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/min"-->
+            <!--android:layout_width="21dp"-->
+            <!--android:layout_height="21dp"-->
+            <!--android:src="@drawable/minus"-->
+
+            <!--/>-->
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#966A737C"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        />
+
+</LinearLayout>

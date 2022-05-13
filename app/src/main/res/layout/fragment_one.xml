@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dp"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginTop="4.0dp"
+                card_view:cardCornerRadius="2dp">
+
+                <LinearLayout android:id="@+id/layout_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Healthy Eateries"
+                        android:textSize="20dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="ORGANIZED BY JHON DUE" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6TH JULY 2017,9:30PM"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:layout_weight="1"
+                        android:textSize="15dp"/>
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200.0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/sample"  />
+
+                    <LinearLayout android:id="@+id/layout_item_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1.8"
+                            android:layout_marginTop="10dp">
+                            <TextView
+                                android:id="@+id/pro_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hotel Novotel Liverpool Centre,UK"
+                                android:textSize="10dp"
+                                android:gravity="center"
+                                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="People are going in this event"
+                                android:textSize="10dp"
+                                android:padding="5dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center|left"
+                                android:textStyle="bold"/>
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbars="none">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal" >
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:padding="10dp"
+                                        app:srcCompat="@drawable/man" />
+
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="About the event"
+                                android:textSize="10dp"
+                                android:padding="5dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center|left"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="Healthy eating means eating a variety of foods that give you the nutrients you need to maintain your health, feel good, and have energy. These nutrients include protein, carbohydrates, fat, water, vitamins, and minerals. " />
+                        </LinearLayout>
+                        <ImageView android:id="@+id/ic_wishlist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:layout_gravity="center_vertical"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/collapsing_toolbar_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  app:contentScrim : The Toolbar color when the
+              collapsing toolbar is collapsed. -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp">
+
+
+
+
+                    <ImageView
+                        android:id="@+id/cover_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <!-- app:layout_behavior attribute value settings make app tool bar appear while RecyclerView scroll. -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dp"
+                android:layout_marginLeft="4.0dp"
+                android:layout_marginRight="4.0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_gravity="bottom|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Personal Info"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="2dp"/>
+
+                        <TextView
+                            android:id="@+id/_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Fullname"
+                            android:fontFamily="sans-serif"
+                            android:inputType="textEmailAddress"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:layout_marginTop="10dp"
+                            android:textColor="#000000" />
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Mobile Number"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+
+                        <TextView
+                            android:id="@+id/about_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="About Info"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+
+                        <TextView
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Birthday"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/birth_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Birth Place"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+                        <TextView
+                            android:id="@+id/lives_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lives In"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/occuapation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Occupation"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Gender"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Marital Status"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+                        <TextView
+                            android:id="@+id/religious"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Religious Beliefs"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/political_incline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Political Incline"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/website"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Website"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dp"
+                android:layout_marginLeft="4.0dp"
+                android:layout_marginRight="4.0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_gravity="bottom|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Education and Employment"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="2dp"/>
+
+
+
+                        <TextView
+                            android:id="@+id/profession_skill"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Professional Skills"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:textColor="#000000" />
+
+
+
+                        <TextView
+                            android:id="@+id/university"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:hint="University"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+
+                            android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/universityse"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:hint="University Start to End Year"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:singleLine="true"
+
+                        android:textColor="#000000" />
+
+
+                    <TextView
+                        android:id="@+id/school"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:hint="School"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:singleLine="true"
+
+                        android:textColor="#000000" />
+                    <TextView
+                        android:id="@+id/schoolse"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:hint="School Start to End Year"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:singleLine="true"
+
+                        android:textColor="#000000" />
+
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dp"
+                android:layout_marginLeft="4.0dp"
+                android:layout_marginRight="4.0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_gravity="bottom|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Hobbies and Interests"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="2dp"/>
+
+
+
+                        <TextView
+                            android:id="@+id/hobbies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Hobbies"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/fav_music_bands"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Music Bands / Artists"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/fav_tv_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite TV Shows"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/fav_books"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Books"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/fav_movies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Movies"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/fav_writer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Writers"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/fav_games"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Games"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+                        <TextView
+                            android:id="@+id/other_interest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Other Interests"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

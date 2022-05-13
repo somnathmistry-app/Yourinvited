@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) 2015 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4.0dp"
+    android:layout_marginLeft="8.0dp"
+    android:layout_marginRight="8.0dp"
+    android:layout_marginTop="4.0dp"
+    card_view:cardCornerRadius="2dp">
+
+    <LinearLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:text="Healthy Eateries"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textAllCaps="true"
+            android:text="ORGANIZED BY JHON DUE"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="6TH JULY 2017,9:30PM"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/sample" />
+
+        <LinearLayout
+            android:id="@+id/layout_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pro_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                    android:gravity="center|left"
+                    android:text="Hotel Novotel Liverpool Centre,UK"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pro_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_people_black_24dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="   20 People Going"
+                    android:textColor="#4CAF50"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic_wishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.3" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/lay_ac_dc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:id="@+id/txt_accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:background="@color/green"
+                android:padding="10dp"
+                android:text="ACCEPT"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="DECLINE"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

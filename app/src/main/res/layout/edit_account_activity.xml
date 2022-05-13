@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rect"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:background="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView3"
+                android:text="Account"
+                android:textColor="@android:color/white"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/round_rect"
+                android:elevation="2dp"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Update"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+
+
+                <ImageView
+                    android:id="@+id/cover_picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:padding="2dp"
+                    android:src="@drawable/sample" />
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dp"
+                    android:layout_marginLeft="8.0dp"
+                    android:layout_marginRight="8.0dp"
+                    android:layout_marginTop="4.0dp"
+                    card_view:cardCornerRadius="2dp"
+                    android:layout_gravity="bottom|center">
+
+                <ImageView
+                    android:id="@+id/profile_picture"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="3dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sample" />
+
+                </android.support.v7.widget.CardView>
+
+
+
+
+            </FrameLayout>
+
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="4.0dp"
+                    android:layout_marginTop="10dp"
+                    card_view:cardCornerRadius="2dp"
+                    android:layout_gravity="bottom|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Personal Info"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <EditText
+                            android:id="@+id/_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:hint="Fullname"
+                            android:inputType="textEmailAddress"
+                            android:padding="5dp"
+                            android:singleLine="true"
+
+                            android:textColor="#000000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:hint="Mobile Number"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:singleLine="true"
+
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/about_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="About Info"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Birthday"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:focusable="false"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/birth_place"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Birth Place"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/lives_in"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Lives In"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/occuapation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Occupation"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Gender"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        >
+
+                        <Spinner
+                            android:id="@+id/spinner_gender"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:entries="@array/array_gender"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Marital Status"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_m_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:entries="@array/array_m_staus"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/religious"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Religious Beliefs"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/political_incline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Political Incline"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/website"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Website"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dp"
+                android:layout_marginLeft="4.0dp"
+                android:layout_marginRight="4.0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_gravity="bottom|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Education and Employment"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" >
+
+                        <EditText
+                            android:id="@+id/profession_skill"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Professional Skills"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:textColor="#000000" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/university"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+
+                            android:hint="University"
+                            android:inputType="text"
+                            android:padding="5dp"
+                            android:singleLine="true"
+
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" University Start to End Year"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <Spinner
+                                android:id="@+id/u_from"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="20dp"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+
+
+                            <Spinner
+                                android:id="@+id/u_to"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="20dp"
+                               />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" School"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <Spinner
+                            android:id="@+id/spinner_school"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" School Start to End Year"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+
+                            <Spinner
+                                android:id="@+id/s_from"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="20dp"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+
+
+                            <Spinner
+                                android:id="@+id/s_to"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="20dp"
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4.0dp"
+                android:layout_marginLeft="4.0dp"
+                android:layout_marginRight="4.0dp"
+                android:layout_marginTop="10dp"
+                card_view:cardCornerRadius="2dp"
+                android:layout_gravity="bottom|center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Hobbies and Interests"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"/>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/hobbies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Hobbies"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/fav_music_bands"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Music Bands / Artists"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/fav_tv_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite TV Shows"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/fav_books"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Books"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/fav_movies"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Movies"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/fav_writer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Writers"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/fav_games"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Favourite Games"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <EditText
+                            android:id="@+id/other_interest"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:hint="Other Interests"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="true"
+                            android:textColor="#000000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

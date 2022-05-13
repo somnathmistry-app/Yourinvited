@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="58dp">
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:text="Demo name" />
+
+        <TextView
+            android:id="@+id/reciew_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Demo Review title"
+            android:textColor="@color/secondary_text_color"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+        <RatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.5"
+            android:layout_marginTop="5dp"
+            android:stepSize="0.5"
+            android:theme="@style/RatingBar"
+            />
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/secondary_text_color"
+            android:text="blah blah blah blah blah blah blah blah blah blah blah blah blah blah" />
+
+        <TextView
+            android:id="@+id/status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/12/2017"
+            android:textStyle="bold"
+            android:textSize="12dp" />
+
+        <View
+            android:id="@+id/view_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/devider" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

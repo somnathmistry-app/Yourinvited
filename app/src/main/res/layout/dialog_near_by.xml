@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/devider"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="40dp"
+                android:text="Demo Name"
+                android:textColor="@color/primary_text"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/name_tv"
+              />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.5"
+                android:layout_marginLeft="16dp"
+                android:layout_below="@+id/category_tv"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar"
+                />
+            <TextView
+                android:id="@+id/ph_no_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital"
+                android:textSize="16sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/call_small"
+                android:drawablePadding="5dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:layout_below="@+id/rating"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/primary_text"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="20dp"
+            android:text="We just need your registered Email Id to send you your new password. " />
+
+        <Button
+            android:id="@+id/call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:text="CAll"
+            android:textColor="#fff"
+            android:theme="@style/MyButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/collapsing_toolbar_appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--  app:contentScrim : The Toolbar color when the
+              collapsing toolbar is collapsed. -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_layout"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary" >
+
+            <!-- app:layout_collapseMode : parallax means an animation effect,
+                 pin means fixed. -->
+            <!--  <ImageView
+                  android:id="@+id/collapsing_toolbar_image_view"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:scaleType="centerCrop"
+                  app:layout_collapseMode="parallax"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp">
+
+
+
+
+                    <ImageView
+                        android:id="@+id/cover_picture"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop"
+                        />
+
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chandan Kumar Mukherjee Banerjee"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_gravity="center"/>
+
+
+
+                <TextView
+                    android:id="@+id/group_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public Group 15 Members"
+                    android:gravity="center"
+                    android:textSize="7dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@android:color/black"
+                    android:layout_gravity="center"/>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/group_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/top_lay">
+
+                    <com.devonetech.android.yourinvited.custom.Circle_Image
+                        android:id="@+id/imageView4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/man" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginRight="30dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="7dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/rounded_rect"
+                        android:text="Write here about your post..." />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="15dp">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            app:srcCompat="@drawable/ic_photo_album_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Photos"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="7dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+    <!-- app:layout_behavior attribute value settings make app tool bar appear while RecyclerView scroll. -->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         android:id="@+id/swipe_refresh_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+     </android.support.v4.widget.SwipeRefreshLayout>
+ -->
+
+    <!-- app:layout_anchor attribute value is the component id that this floating action button will anchor at.
+         app:layout_anchorGravity configures where the floating action button will located at. -->
+
+
+</android.support.design.widget.CoordinatorLayout>
